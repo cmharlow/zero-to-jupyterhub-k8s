@@ -77,3 +77,7 @@ def set_config_if_not_none(cparent, name, key):
     data = get_config(key)
     if data is not None:
         setattr(cparent, name, data)
+    elif key is 'fs_gid':
+        setattr(cparent, name, None)
+    elif key is 'uid':
+        setattr(cparent, name, None)
