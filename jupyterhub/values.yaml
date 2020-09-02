@@ -12,7 +12,7 @@ hub:
   publicURL:
   initContainers: []
   uid: 0
-  fsGid: None
+  fsGid: 0
   nodeSelector: {}
   concurrentSpawnLimit: 64
   consecutiveFailureLimit: 5
@@ -246,7 +246,6 @@ singleuser:
   initContainers: []
   extraContainers: []
   uid: 0
-  fsGid: None
   serviceAccountName:
   storage:
     type: dynamic
