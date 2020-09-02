@@ -75,9 +75,9 @@ def set_config_if_not_none(cparent, name, key):
     configuration item if not None
     """
     data = get_config(key)
-    if data is not None and name is not 'singleuser.fsGid':
+    if data is not None and name is not 'fs_gid' and name is not 'uid':
         setattr(cparent, name, data)
-    elif name is 'singleuser.fsGid':
+    elif name is 'fs_gid':
         setattr(cparent, name, None)
-    elif name is 'singleuser.uid':
+    elif name is 'uid':
         setattr(cparent, name, None)
