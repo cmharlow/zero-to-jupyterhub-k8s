@@ -77,3 +77,5 @@ def set_config_if_not_none(cparent, name, key):
     data = get_config(key)
     if data is not None:
         setattr(cparent, name, data)
+    else:
+        setattr(cparent, name, None)
